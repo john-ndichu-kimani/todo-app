@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="hero"></div>
+    <div class="todo-wrapper">
+      <div class="heading">
+        <h1>TODO</h1>
+        <img src="images/icon-moon.svg" alt="moon-icon" class="moon">
+        <img src="images\icon-sun.svg" alt="sun-icon" class="sun">
+      </div>
+      <form class="createTodoForm" onsubmit="return false;">
+        <input type="text" name="todo" id="txt-todo" placeholder="Create a new todo..." autocomplete="off">
+        <div id="todo-list">
+         
+        
+        
+          
+        
+        </div>
+        <div class="todo-links">
+          <p><span class="item-number" id="items-left">0</span> items left</p>
+          <ul>
+            <li class="active" onclick="filterTodos('all')">All</li>
+            <li onclick="filterTodos('active')">Active</li>
+            <li onclick="filterTodos('completed')">Completed</li>
+          </ul>
+          <p onclick="clearCompleted()">Clear Completed</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

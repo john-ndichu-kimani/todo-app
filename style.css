@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans';
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+}
+
+.hero{
+    height:50%;
+    width: 100%;
+    background-image: url(/images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: hero;
+}
+.moon{
+    display: block;
+    cursor: pointer;
+}
+.moon.dark-mode{
+    display: block;
+}
+.container.dark-theme{
+    background-color: hsl(235, 21%, 11%);
+}
+.sun.dark-theme{
+    display: none;
+}
+.todo-links.dark-theme{
+    color: #fff;
+}
+
+.hero.dark-theme{
+    background-image: url(/images/bg-desktop-dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sun{
+    cursor: pointer;
+    display: none;
+}
+
+
+form{
+    width: 100%;
+}
+.todo-wrapper{
+    width: 60vw;
+    margin: -200px auto;
+    padding: 30px;
+    box-shadow: 0px 0px 5x rgb(62, 61, 61);
+    align-items: center;
+}
+.heading{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.heading h1{
+    color: #fff;
+}
+#txt-todo{
+    width: 100%;
+    margin: 30px auto;
+    padding: .7rem 1.4rem;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column; 
+}
+#txt-todo.dark-theme{
+    background-color: black;
+    color: #fff;
+}
+#todo-list{
+    border-radius: 5px;
+    background:white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#todo-list.dark-theme{
+    background-color: hsl(235, 21%, 11%);
+    color: #fff;
+}
+
+p{
+    font-size: 14px;
+}
+.item-text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.item{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid rgb(235, 233, 233) 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ion-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+#cross{
+    width: 15px;
+    cursor: pointer;
+}
+
+.todo-links{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 10px;
+    height: 10vh;
+    
+}
+.todo-links ul {
+    display: flex;
+    gap: 10px;
+}
+.todo-links ul li{
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+}
+.active{
+    color: rgb(53, 53, 241);
+}
+
+
